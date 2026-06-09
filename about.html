@@ -3,79 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Aisyah Naadhirah</title>
+  <title>About Me | Amna Yusoff</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <nav class="navbar">
-    <a href="index.html" class="logo">Aisyah<span>Portfolio</span></a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<header class="cute-header">
+  <nav class="cute-navbar">
+    <div class="brand">
+      <div class="logo-bubble">AY</div>
+      <span>Amna Yusoff</span>
+    </div>
 
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul class="cute-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Me</a></li>
+      <li><a href="blog.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<section class="page-header">
-  <p>Get to know me</p>
-  <h1>About Me</h1>
-</section>
+<main class="blue-page">
+  <section class="about-hero">
+    <div class="circle-photo">
+      <img src="images/amna.jpg" alt="Amna Yusoff">
+    </div>
 
-<section class="about-section">
-  <div class="about-card">
-    <h2>Who Am I?</h2>
-    <p>
-      My name is Aisyah Naadhirah. I am a Bachelor of Computer Science
-      (Software Development) student with a strong interest in web application
-      development, software engineering and database systems.
-    </p>
-    <p>
-      I enjoy building practical digital solutions that are easy to use and useful
-      for real users. I am also interested in learning new technologies and improving
-      my skills through hands-on projects.
-    </p>
-  </div>
+    <p class="small-title">get to know me</p>
+    <h1>About Me</h1>
 
-  <div class="about-card">
-    <h2>Achievements</h2>
-    <ul class="achievement-list">
-      <li>Dean List achievement</li>
-      <li>Top 3 FYP Award Project</li>
-      <li>Experience in academic software development projects</li>
-      <li>GitHub portfolio and documentation practice</li>
-    </ul>
-  </div>
-</section>
+    <div class="about-text-card">
+      <p>
+        Hi! My name is <strong>Amna Yusoff</strong>, a Bachelor of Computer Science
+        (Software Development) student at Universiti Sultan Zainal Abidin (UniSZA).
+        I am interested in web application development, database systems and software engineering.
+      </p>
 
-<section class="section">
-  <div class="section-title">
-    <p>Technical Skills</p>
-    <h2>Skills & Tools</h2>
-  </div>
+      <p>
+        Throughout my studies, I have worked with technologies such as HTML, CSS,
+        JavaScript, PHP, MySQL and Flutter. I enjoy building practical digital
+        solutions that can solve real-world problems and improve user experience.
+      </p>
 
-  <div class="skills-grid">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>PHP</span>
-    <span>MySQL</span>
-    <span>CodeIgniter 4</span>
-    <span>Git</span>
-    <span>GitHub</span>
-  </div>
-</section>
+      <a href="resume.pdf" class="cute-btn" download>⬇ Download CV</a>
+    </div>
+  </section>
+</main>
 
-<footer>
-  <p>© 2026 Aisyah Naadhirah. All Rights Reserved.</p>
+<footer class="cute-footer">
+  <p>© 2026 Amna Yusoff. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>

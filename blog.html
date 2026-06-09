@@ -3,67 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Aisyah Naadhirah</title>
+  <title>Portfolio | Amna Yusoff</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <nav class="navbar">
-    <a href="index.html" class="logo">Aisyah<span>Portfolio</span></a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<header class="cute-header">
+  <nav class="cute-navbar">
+    <div class="brand">
+      <div class="logo-bubble">AY</div>
+      <span>Amna Yusoff</span>
+    </div>
 
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul class="cute-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="blog.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<section class="page-header">
-  <p>My Learning Journey</p>
-  <h1>Blog Posts</h1>
-</section>
-
-<section class="blog-section">
-  <article class="blog-card">
-    <span class="blog-date">January 2026</span>
-    <h2>My Journey in Software Development</h2>
-    <p>
-      Software development has helped me improve my logical thinking,
-      problem-solving skills and ability to build systems that can support users.
+<main class="blue-page">
+  <section class="portfolio-section">
+    <p class="small-title">my learning journey</p>
+    <h1>Portfolio Showcase</h1>
+    <p class="portfolio-desc">
+      Explore my project and technical skills developed throughout my software development journey.
     </p>
-    <button onclick="readMore('My Journey in Software Development')">Read More</button>
-  </article>
 
-  <article class="blog-card">
-    <span class="blog-date">February 2026</span>
-    <h2>Why I Enjoy Web Development</h2>
-    <p>
-      I enjoy web development because it allows me to combine creativity and coding
-      to design interactive, responsive and meaningful websites.
-    </p>
-    <button onclick="readMore('Why I Enjoy Web Development')">Read More</button>
-  </article>
+    <div class="tab-box">
+      <button class="tab-btn active" onclick="showTab('projects')">Projects</button>
+      <button class="tab-btn" onclick="showTab('skills')">Skills</button>
+    </div>
 
-  <article class="blog-card">
-    <span class="blog-date">March 2026</span>
-    <h2>What I Learned from GitHub</h2>
-    <p>
-      GitHub teaches me how to manage project versions, write meaningful commits
-      and document my work professionally using README files.
-    </p>
-    <button onclick="readMore('What I Learned from GitHub')">Read More</button>
-  </article>
-</section>
+    <div id="projects" class="tab-content active">
+      <div class="project-showcase-card">
+        <div class="project-image">
+          <img src="images/ireportbully.png" alt="iReportBully Project">
+        </div>
 
-<footer>
-  <p>© 2026 Aisyah Naadhirah. All Rights Reserved.</p>
+        <div class="project-details">
+          <h2>iReportBully</h2>
+          <p>
+            iReportBully is a bullying complaint management system developed to help users
+            report bullying cases digitally. This project focuses on improving accessibility,
+            reporting process and user support.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Mobile App</span>
+            <span>Complaint System</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="tab-content">
+      <div class="skills-wrapper">
+        <div class="skill-card">
+          <h2>Technical Skills</h2>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h2>Soft Skills</h2>
+          <div class="skill-tags">
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+            <span>Adaptability</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="cute-footer">
+  <p>© 2026 Amna Yusoff. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>

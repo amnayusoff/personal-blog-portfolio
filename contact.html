@@ -3,62 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Aisyah Naadhirah</title>
+  <title>Contact | Amna Yusoff</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="header">
-  <nav class="navbar">
-    <a href="index.html" class="logo">Aisyah<span>Portfolio</span></a>
-
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
+<header class="cute-header">
+  <nav class="cute-navbar">
+    <div class="brand">
+      <div class="logo-bubble">AY</div>
+      <span>Amna Yusoff</span>
+    </div>
 
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul class="cute-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="blog.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
-<section class="page-header">
-  <p>Let's connect</p>
-  <h1>Contact Me</h1>
-</section>
+<main class="blue-page">
+  <section class="contact-page">
+    <p class="small-title">let's connect</p>
+    <h1>Get In Touch</h1>
 
-<section class="contact-section">
-  <div class="contact-info">
-    <div class="contact-card">
-      <h3>Email</h3>
-      <p>yourname@email.com</p>
+    <p class="contact-desc">
+      Thank you for visiting my portfolio. Feel free to contact me regarding internship
+      opportunities, collaborations or professional networking.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>📧 Email</h3>
+        <p>your-email@gmail.com</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>📱 Phone</h3>
+        <p>+60 xx-xxxxxxx</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>📍 Location</h3>
+        <p>Malaysia</p>
+      </div>
     </div>
 
-    <div class="contact-card">
-      <h3>GitHub</h3>
-      <p>github.com/amnayusoff</p>
+    <div class="social-row">
+      <a href="https://github.com/amnayusoff" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="mailto:your-email@gmail.com">Email</a>
     </div>
+  </section>
+</main>
 
-    <div class="contact-card">
-      <h3>Location</h3>
-      <p>Malaysia</p>
-    </div>
-  </div>
-
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <textarea placeholder="Your Message"></textarea>
-    <button type="button" onclick="sendMessage()">Send Message</button>
-    <p id="formMessage"></p>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 Aisyah Naadhirah. All Rights Reserved.</p>
+<footer class="cute-footer">
+  <p>© 2026 Amna Yusoff. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>
