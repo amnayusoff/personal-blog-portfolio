@@ -3,59 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Blog</title>
+  <title>Blog | Aisyah Naadhirah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<header class="header">
   <nav class="navbar">
-    <h2 class="logo">MyPortfolio</h2>
+    <a href="index.html" class="logo">Aisyah<span>Portfolio</span></a>
+
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html" class="active">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
   </nav>
 </header>
 
 <section class="page-header">
-  <h1>My Blog</h1>
+  <p>My Learning Journey</p>
+  <h1>Blog Posts</h1>
 </section>
 
-<section class="blog-container">
-  <div class="blog-card">
+<section class="blog-section">
+  <article class="blog-card">
+    <span class="blog-date">January 2026</span>
     <h2>My Journey in Software Development</h2>
     <p>
-      Software development has taught me how to think logically, solve problems 
-      and create systems that can help users.
+      Software development has helped me improve my logical thinking,
+      problem-solving skills and ability to build systems that can support users.
     </p>
-    <span>Posted on January 2026</span>
-  </div>
+    <button onclick="readMore('My Journey in Software Development')">Read More</button>
+  </article>
 
-  <div class="blog-card">
+  <article class="blog-card">
+    <span class="blog-date">February 2026</span>
     <h2>Why I Enjoy Web Development</h2>
     <p>
-      I enjoy web development because I can combine creativity and coding to 
-      build interactive and meaningful websites.
+      I enjoy web development because it allows me to combine creativity and coding
+      to design interactive, responsive and meaningful websites.
     </p>
-    <span>Posted on February 2026</span>
-  </div>
+    <button onclick="readMore('Why I Enjoy Web Development')">Read More</button>
+  </article>
 
-  <div class="blog-card">
-    <h2>My Experience Using GitHub</h2>
+  <article class="blog-card">
+    <span class="blog-date">March 2026</span>
+    <h2>What I Learned from GitHub</h2>
     <p>
-      GitHub helps me manage my project, track changes and document my progress 
-      through meaningful commits.
+      GitHub teaches me how to manage project versions, write meaningful commits
+      and document my work professionally using README files.
     </p>
-    <span>Posted on March 2026</span>
-  </div>
+    <button onclick="readMore('What I Learned from GitHub')">Read More</button>
+  </article>
 </section>
 
 <footer>
-  <p>&copy; 2026 My Personal Blog Portfolio. All Rights Reserved.</p>
+  <p>© 2026 Aisyah Naadhirah. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>

@@ -3,39 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Blog Portfolio</title>
+  <title>Aisyah Naadhirah | Personal Blog Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<header class="header">
   <nav class="navbar">
-    <h2 class="logo">MyPortfolio</h2>
+    <a href="index.html" class="logo">Aisyah<span>Portfolio</span></a>
+
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Hello, I'm Nur Amna</h1>
-    <p>A Software Development student who enjoys creating simple, useful and user-friendly websites.</p>
-    <a href="about.html" class="btn">Learn More</a>
+  <div class="hero-content fade-in">
+    <p class="tag">Available for Internship</p>
+    <h1>Hello, I'm <span>Aisyah Naadhirah</span></h1>
+    <p class="hero-text">
+      A Software Development student passionate about building modern web applications,
+      solving real-world problems and creating user-friendly digital experiences.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="about.html" class="btn primary-btn">About Me</a>
+      <a href="blog.html" class="btn secondary-btn">Read Blog</a>
+    </div>
+  </div>
+
+  <div class="hero-card fade-in">
+    <h3>Portfolio Highlights</h3>
+    <div class="highlight">
+      <span>01</span>
+      <p>Web Development Projects</p>
+    </div>
+    <div class="highlight">
+      <span>02</span>
+      <p>Software Development Skills</p>
+    </div>
+    <div class="highlight">
+      <span>03</span>
+      <p>GitHub Documentation</p>
+    </div>
   </div>
 </section>
 
-<section class="content">
-  <h2>Welcome to My Blog Portfolio</h2>
-  <p>This website shares my background, interests, learning journey and software development projects.</p>
+<section class="section">
+  <div class="section-title">
+    <p>My Work</p>
+    <h2>Featured Projects</h2>
+  </div>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>School360</h3>
+      <p>Student Performance Monitoring System developed using PHP, CodeIgniter 4 and MySQL.</p>
+      <div class="tech">
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>CodeIgniter 4</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>iReportBully</h3>
+      <p>A reporting system designed to help users submit and manage bullying reports digitally.</p>
+      <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Database</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Personal Blog Portfolio</h3>
+      <p>A responsive GitHub portfolio website created to showcase my profile, blog and projects.</p>
+      <div class="tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>&copy; 2026 My Personal Blog Portfolio. All Rights Reserved.</p>
+  <p>© 2026 Aisyah Naadhirah. All Rights Reserved.</p>
 </footer>
 
 <script src="js/script.js"></script>
