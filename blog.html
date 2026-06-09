@@ -1,32 +1,184 @@
-<div id="skills" class="tab-content">
-  <div class="skills-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Amna Yusoff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-    <div class="skill-card technical-card">
-      <h2>Technical Skills</h2>
+<header class="cute-header">
+  <nav class="cute-navbar">
+    <div class="brand">
+      <div class="logo-bubble">AY</div>
+      <span>Amna Yusoff</span>
+    </div>
 
-      <div class="tech-skill-grid">
-        <div class="tech-skill"><span>🌐</span><p>HTML</p></div>
-        <div class="tech-skill"><span>🎨</span><p>CSS</p></div>
-        <div class="tech-skill"><span>⚡</span><p>JavaScript</p></div>
-        <div class="tech-skill"><span>🐘</span><p>PHP</p></div>
-        <div class="tech-skill"><span>🗄️</span><p>MySQL</p></div>
-        <div class="tech-skill"><span>📱</span><p>Flutter</p></div>
-        <div class="tech-skill"><span>🔥</span><p>Firebase</p></div>
-        <div class="tech-skill"><span>🐙</span><p>GitHub</p></div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul class="cute-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="blue-page">
+  <section class="portfolio-section">
+    <p class="small-title">my learning journey</p>
+    <h1>Portfolio Showcase</h1>
+    <p class="portfolio-desc">
+      Explore my project, technical skills and academic achievements developed throughout my software development journey.
+    </p>
+
+    <div class="tab-box three-tabs">
+      <button class="tab-btn active" onclick="showTab('projects')">Projects</button>
+      <button class="tab-btn" onclick="showTab('skills')">Skills</button>
+      <button class="tab-btn" onclick="showTab('achievements')">Achievement</button>
+    </div>
+
+    <div id="projects" class="tab-content active">
+      <div class="project-showcase-card">
+        <div class="project-image">
+          <img src="images/ireportbully.png" alt="iReportBully Project">
+        </div>
+
+        <div class="project-details">
+          <h2>iReportBully</h2>
+          <p>
+            iReportBully is a bullying complaint management system developed to help users
+            report bullying cases digitally. This project focuses on improving accessibility,
+            reporting process and user support.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Firebase</span>
+            <span>Mobile App</span>
+            <span>Complaint System</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="skill-card soft-card">
-      <h2>Soft Skills</h2>
+    <div id="skills" class="tab-content">
+      <div class="skills-wrapper">
 
-      <div class="soft-skill-list">
-        <span>Problem Solving</span>
-        <span>Teamwork</span>
-        <span>Communication</span>
-        <span>Time Management</span>
-        <span>Adaptability</span>
+        <div class="skill-card">
+          <h2>Technical Skills</h2>
+
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="tech-icon">🌐</div>
+              <p>HTML</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🎨</div>
+              <p>CSS</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">⚡</div>
+              <p>JavaScript</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🐘</div>
+              <p>PHP</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🗄️</div>
+              <p>MySQL</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">📱</div>
+              <p>Flutter</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🔥</div>
+              <p>Firebase</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">💻</div>
+              <p>GitHub</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h2>Soft Skills</h2>
+
+          <div class="skill-tags">
+            <span>Problem Solving</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Time Management</span>
+            <span>Adaptability</span>
+          </div>
+        </div>
+
       </div>
     </div>
 
-  </div>
-</div>
+    <div id="achievements" class="tab-content">
+      <div class="achievement-wrapper">
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🎓</div>
+          <h2>Dean's List Every Semester</h2>
+          <p>
+            Achieved Dean's List recognition every semester until Semester 5
+            for consistent academic performance.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <h2>CGPA 3.86</h2>
+          <p>
+            Maintained a current CGPA of 3.86 in Bachelor of Computer Science
+            (Software Development).
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">💻</div>
+          <h2>Developed iReportBully</h2>
+          <p>
+            Developed iReportBully, a digital bullying complaint management system
+            using Flutter and Firebase.
+          </p>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon">🌐</div>
+          <h2>Built Personal Portfolio</h2>
+          <p>
+            Built and deployed a responsive personal portfolio website using
+            HTML, CSS, JavaScript, GitHub and GitHub Pages.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="cute-footer">
+  <p>© 2026 Amna Yusoff. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

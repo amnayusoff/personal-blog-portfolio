@@ -696,53 +696,91 @@ footer {
     padding: 40px 5% 70px;
   }
 }
-
-/* Skills redesign */
-.tech-skill-grid {
+.tech-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  gap: 18px;
   margin-top: 20px;
 }
 
-.tech-skill {
-  background: #eaf8ff;
-  border: 3px solid #1b4965;
-  border-radius: 18px;
-  padding: 18px 10px;
-  text-align: center;
-  box-shadow: 5px 5px 0 #b7e4f9;
-}
-
-.tech-skill span {
-  font-size: 34px;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.tech-skill p {
-  color: #1b4965;
-  font-weight: 800;
-}
-
-.soft-skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 20px;
-}
-
-.soft-skill-list span {
+.tech-item {
   background: white;
-  color: #1b4965;
-  border: 3px dashed #5dade2;
-  border-radius: 999px;
-  padding: 12px 18px;
-  font-weight: 800;
+  border: 3px solid #1b4965;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 6px 6px 0 #b7e4f9;
+  transition: 0.3s;
 }
 
-@media screen and (max-width: 480px) {
-  .tech-skill-grid {
+.tech-item:hover {
+  transform: translateY(-5px);
+}
+
+.tech-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.tech-item p {
+  font-weight: 700;
+  color: #1b4965;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .tech-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.three-tabs {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.achievement-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.achievement-card {
+  background: white;
+  border: 3px solid #1b4965;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 10px 10px 0 #b7e4f9;
+  text-align: center;
+}
+
+.achievement-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.achievement-card h2 {
+  color: #12384f;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.achievement-card p {
+  color: #31576e;
+  line-height: 1.7;
+}
+
+.project-showcase-card {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .achievement-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .three-tabs {
+    grid-template-columns: 1fr !important;
   }
 }
