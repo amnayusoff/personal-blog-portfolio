@@ -1,105 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Amna Yusoff</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<div id="skills" class="tab-content">
+  <div class="skills-wrapper">
 
-<header class="cute-header">
-  <nav class="cute-navbar">
-    <div class="brand">
-      <div class="logo-bubble">AY</div>
-      <span>Amna Yusoff</span>
-    </div>
+    <div class="skill-card technical-card">
+      <h2>Technical Skills</h2>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <ul class="cute-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="blog.html" class="active">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="blue-page">
-  <section class="portfolio-section">
-    <p class="small-title">my learning journey</p>
-    <h1>Portfolio Showcase</h1>
-    <p class="portfolio-desc">
-      Explore my project and technical skills developed throughout my software development journey.
-    </p>
-
-    <div class="tab-box">
-      <button class="tab-btn active" onclick="showTab('projects')">Projects</button>
-      <button class="tab-btn" onclick="showTab('skills')">Skills</button>
-    </div>
-
-    <div id="projects" class="tab-content active">
-      <div class="project-showcase-card">
-        <div class="project-image">
-          <img src="images/ireportbully.png" alt="iReportBully Project">
-        </div>
-
-        <div class="project-details">
-          <h2>iReportBully</h2>
-          <p>
-            iReportBully is a bullying complaint management system developed to help users
-            report bullying cases digitally. This project focuses on improving accessibility,
-            reporting process and user support.
-          </p>
-
-          <div class="project-tags">
-            <span>Flutter</span>
-            <span>Firebase</span>
-            <span>Mobile App</span>
-            <span>Complaint System</span>
-          </div>
-        </div>
+      <div class="tech-skill-grid">
+        <div class="tech-skill"><span>🌐</span><p>HTML</p></div>
+        <div class="tech-skill"><span>🎨</span><p>CSS</p></div>
+        <div class="tech-skill"><span>⚡</span><p>JavaScript</p></div>
+        <div class="tech-skill"><span>🐘</span><p>PHP</p></div>
+        <div class="tech-skill"><span>🗄️</span><p>MySQL</p></div>
+        <div class="tech-skill"><span>📱</span><p>Flutter</p></div>
+        <div class="tech-skill"><span>🔥</span><p>Firebase</p></div>
+        <div class="tech-skill"><span>🐙</span><p>GitHub</p></div>
       </div>
     </div>
 
-    <div id="skills" class="tab-content">
-      <div class="skills-wrapper">
-        <div class="skill-card">
-          <h2>Technical Skills</h2>
-          <div class="skill-tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>Flutter</span>
-            <span>Firebase</span>
-            <span>GitHub</span>
-          </div>
-        </div>
+    <div class="skill-card soft-card">
+      <h2>Soft Skills</h2>
 
-        <div class="skill-card">
-          <h2>Soft Skills</h2>
-          <div class="skill-tags">
-            <span>Problem Solving</span>
-            <span>Teamwork</span>
-            <span>Communication</span>
-            <span>Time Management</span>
-            <span>Adaptability</span>
-          </div>
-        </div>
+      <div class="soft-skill-list">
+        <span>Problem Solving</span>
+        <span>Teamwork</span>
+        <span>Communication</span>
+        <span>Time Management</span>
+        <span>Adaptability</span>
       </div>
     </div>
-  </section>
-</main>
 
-<footer class="cute-footer">
-  <p>© 2026 Amna Yusoff. All Rights Reserved.</p>
-</footer>
-
-<script src="js/script.js"></script>
-</body>
-</html>
+  </div>
+</div>

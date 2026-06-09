@@ -696,3 +696,53 @@ footer {
     padding: 40px 5% 70px;
   }
 }
+
+/* Skills redesign */
+.tech-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.tech-skill {
+  background: #eaf8ff;
+  border: 3px solid #1b4965;
+  border-radius: 18px;
+  padding: 18px 10px;
+  text-align: center;
+  box-shadow: 5px 5px 0 #b7e4f9;
+}
+
+.tech-skill span {
+  font-size: 34px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tech-skill p {
+  color: #1b4965;
+  font-weight: 800;
+}
+
+.soft-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.soft-skill-list span {
+  background: white;
+  color: #1b4965;
+  border: 3px dashed #5dade2;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 480px) {
+  .tech-skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
