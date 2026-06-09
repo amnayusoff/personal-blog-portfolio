@@ -40,3 +40,10 @@ PersonalBlogPortfolio
 │
 └── js
     └── script.js
+
+    ## Achievements
+
+- Dean List for all semesters
+- Top 3 FYP Award
+- Developed School360 Project
+- Developed iReportBully Project
